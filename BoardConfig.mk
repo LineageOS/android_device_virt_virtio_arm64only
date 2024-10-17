@@ -5,7 +5,7 @@
 #
 
 # Boot manager
-TARGET_BOOT_MANAGER := rEFInd
+TARGET_BOOT_MANAGER ?= grub
 
 # Inherit from common
 include device/virt/virtio-common/BoardConfigCommon.mk
@@ -19,6 +19,9 @@ TARGET_ARCH_VARIANT := armv8-a
 TARGET_CPU_ABI := arm64-v8a
 TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := generic
+
+# GRUB
+TARGET_GRUB_EFI_PREBUILT := prebuilts/bootmgr/grub/device_files/virt/virtio_arm64/BOOTAA64.EFI
 
 # Kernel
 BOARD_KERNEL_CMDLINE += \
