@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+USES_DEVICE_VIRT_VIRTIO_ARM64ONLY := true
+
 # Inherit from virtio_arm64
 include device/virt/virtio_arm64/BoardConfig.mk
-
-USES_DEVICE_VIRT_VIRTIO_ARM64ONLY := true
 
 # Arch
 TARGET_2ND_ARCH :=
