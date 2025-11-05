@@ -8,4 +8,4 @@
 include device/virt/virtio_arm64only/BoardConfig.mk
 
 # Kernel
-TARGET_KERNEL_CONFIG += lineageos/pagesize_16k.config
+TARGET_KERNEL_CONFIG_EXT += kernel/mainline/configs/fragments/y/arm64/pagesize-16k.config
