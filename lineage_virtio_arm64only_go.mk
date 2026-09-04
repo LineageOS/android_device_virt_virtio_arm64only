@@ -9,7 +9,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_no_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Inherit some common Lineage stuff.
-TARGET_EXCLUDES_AUDIOFX := true
 $(call inherit-product, vendor/lineage/config/common_mini_go_phone.mk)
 
 # Inherit from device
